@@ -6,12 +6,13 @@ def fun_fib(a,b):
 def fun_prime(i,input_no):
 	for num in range(i,input_no + 1):
 	   # prime numbers are greater than 1
-	       for i in range(2,num):
+	       for i in range(2,int(num/2)+1):
 	           if (num % i) == 0:
 	               break
 	       else:
 	           list_final.append(num)
 	
+#start here ----->	
 list_final=[1,1]
 input_no=int(input('enter the no location'))
 if input_no%2!=0:
